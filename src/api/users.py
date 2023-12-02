@@ -8,7 +8,6 @@ from src.api.models import User
 users_blueprint = Blueprint('users', __name__)
 api = Api(users_blueprint)
 
-# new
 user = api.model('User', {
     'id': fields.Integer(readOnly=True),
     'username': fields.String(required=True),
